@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Rubik, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  padding-top: 20px;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2.5px 2px 1px;
+}
+
+.informacoes {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avaliacoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.entrega{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.levantamento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.funcionamento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.funcionamento h3{
+  color: crimson;
+}
+
+.opcoes{
+  width: 80vw;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2.5px 2px 1px;
+}
+
+.opcoes button{
+  width: 100%;
+  height: 40px;
+  outline: none;
+  background: transparent;
+}
+
+.opcoes button:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+.marmitas{
+  border: none;
+  border-bottom: rgb(69, 0, 87) solid 2px;
+}
+
+.bebidas{
+  border: none;
+}
