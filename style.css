@@ -11,22 +11,33 @@
 
 body{
   width: 100vw;
+  height: 300vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   flex-direction: column;
 }
 
 .card {
-  padding-top: 20px;
   width: 80vw;
-  height: 50vh;
+  height: 320px;
+  padding: 20px 0 20px 0;
+
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2.5px 2px 1px;
+}
+
+.card p{
+  font-size: 22px;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 .informacoes {
@@ -73,15 +84,26 @@ body{
 
 .opcoes{
   width: 80vw;
+  height: 55px;
   display: flex;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2.5px 2px 1px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .opcoes button{
   width: 100%;
-  height: 40px;
+  height: 55px;
   outline: none;
+
+  font-size: 15px;
+
+  color: black;
   background: transparent;
 }
 
@@ -91,9 +113,84 @@ body{
 
 .marmitas{
   border: none;
-  border-bottom: rgb(69, 0, 87) solid 2px;
 }
 
 .bebidas{
   border: none;
+}
+
+.marmitas.cor {
+  color: rgb(69, 0, 87);
+  border-bottom: rgb(69, 0, 87) solid 3px;
+}
+
+.bebidas.cor{
+  color: rgb(69, 0, 87);
+  border-bottom: rgb(69, 0, 87) solid 3px;
+}
+
+.pesquisa{
+  width: 80vw;
+}
+
+.pesquisa input{
+  width: 100%;
+  padding: 20px 0;
+
+  border: none;
+  outline: none;
+
+  font-size: 17px;
+
+  border-bottom: rgb(69, 0, 87) solid 3px;
+
+}
+
+.marmita{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  font-size: 18px;
+
+  width: 80vw;
+  height: 500px;
+}
+
+.text-marmita{
+  width: 100%;
+  margin-top: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: rgb(69, 0, 87) solid 3px;
+}
+
+.card-marmita{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 2.5px 2px 3px;
+
+  border-left: rgb(69, 0, 87) solid 5px;
+  border-bottom: rgb(69, 0, 87) solid 5px;
+  border-radius: 3px;
+}
+
+.card-marmita P{
+  color: rgb(69, 0, 87);
+}
+
+.card-marmita:hover{
+  width: 101%;
+
+  transition: 0.1s;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px 3.3px;
 }
